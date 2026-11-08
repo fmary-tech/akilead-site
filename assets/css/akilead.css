@@ -1,0 +1,26 @@
+/* akilead.com : correctifs (contraste, accessibilité, icônes sans Font Awesome, pied de page, bandeau cookies) */
+body { --wp--preset--color--body-text: #666666 !important; }
+p.has-primary-color[style*="#335de833"], p.has-primary-color[style*="#335de833"] strong { color: #2447c2 !important; }
+.wp-block-tag-cloud a.tag-cloud-link, .wp-block-post-terms a[rel="tag"] { color: #000 !important; }
+.wp-block-tag-cloud a.tag-cloud-link { display: inline-block; line-height: 1.2; padding: 6px 4px; margin: 0 4px 8px 0; }
+.comment-metadata { margin-top: 8px; }
+.comment-metadata a { display: inline-block; min-height: 24px; line-height: 24px; }
+/* icônes autrefois fournies par Font Awesome */
+a.wp-block-post-excerpt__more-link::after { font-family: inherit !important; font-weight: inherit !important; content: "\00a0\203A" !important; }
+ul[class*="gutenify-list-style-"] li::before { font-family: inherit !important; font-weight: 700 !important; content: "\2714" !important; }
+/* niveaux de titres corrigés : même apparence qu'avant */
+.ak-from-h3 { font-size: var(--wp--custom--typography--font-size--heading-three); line-height: var(--wp--custom--typography--line-height--heading-three); }
+.ak-from-h4 { font-size: var(--wp--custom--typography--font-size--heading-four); line-height: var(--wp--custom--typography--line-height--heading-four); }
+.ak-from-h5 { font-size: var(--wp--custom--typography--font-size--heading-five); line-height: var(--wp--custom--typography--line-height--heading-five); }
+.ak-from-h6 { font-size: var(--wp--custom--typography--font-size--heading-six); line-height: var(--wp--custom--typography--line-height--heading-six); }
+/* lien « Gérer les cookies » */
+.wp-block-post-content .ak-cookie-link { color: var(--wp--preset--color--foreground, #000) !important; }
+.ak-cookie-link { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; min-height: 24px; }
+.ak-footer-min { background: #000; color: #fff; text-align: center; padding: 24px 16px; font-size: var(--wp--preset--font-size--small, 14px); }
+.ak-footer-min p { margin: 0; line-height: 2.2; }
+.ak-footer-min a, .ak-footer-min .ak-cookie-link { color: #fff; }
+.ak-todo { background: #fff3cd; color: #000; font-weight: 600; padding: 0 .25em; }
+.ak-contact { text-align: left; margin: 1.5em 0; }
+.ak-contact .wp-block-button__link { display: inline-block; }
+/* bandeau cookies aux couleurs du site */
+#cc-main { --cc-font-family: inherit; --cc-btn-primary-bg: #325ce8; --cc-btn-primary-border-color: #325ce8; --cc-btn-primary-hover-bg: #2447c2; --cc-btn-primary-hover-border-color: #2447c2; --cc-toggle-on-bg: #325ce8; }
