@@ -1,0 +1,28 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+credentials/
+
+# Dependencies, build output, caches
+node_modules/
+.cache/
+*venv*/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
